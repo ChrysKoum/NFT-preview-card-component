@@ -1,0 +1,122 @@
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    .center-card {
+      font-family: 'Outfit', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: hsl(216, 50%, 16%);
+      color: white;
+      border-radius: 15px;
+      padding: 28px;
+    }
+
+    .container-img {
+      position: relative;
+      background-color: rgba(0, 221, 255, 0.932);
+      border-radius: 16px;
+    }
+
+    #nft-img {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: 1s ease;
+      backface-visibility: hidden;
+      border-radius: 15px;
+    }
+
+    #nft-hover {
+      transition: 1s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .container-img:hover #nft-img {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    .container-img:hover #nft-hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .card-title span:hover {
+      color: aqua;
+      cursor: pointer;
+    }
+
+    .card-body {
+      padding: 0;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    #profile-img {
+      width: 35px;
+      height: 35px;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .card-title {
+      margin-bottom: 15px;
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    .card-text {
+      font-weight: 300;
+    }
+
+    #nft-price {
+      color: aqua;
+    }
+
+    .text-style {
+      color: hsl(215, 51%, 70%);
+      font-size: 18px;
+    }
+
+    .text-style span {
+      color: white;
+    }
+
+    .text-style span:hover {
+      color: aqua;
+      cursor: pointer;
+    }
+
+    .marginspan {
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+
+    hr {
+      margin: 20px auto;
+    }
+
+    .attribution {
+      font-size: 16px;
+      text-align: center;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .attribution a {
+      color: aqua;
+    }
