@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    .center-card {
+      font-family: 'Outfit', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: hsl(216, 50%, 16%);
+      color: white;
+      border-radius: 15px;
+      padding: 28px;
+    }
+
+    .container-img {
+      position: relative;
+      background-color: rgba(0, 221, 255, 0.932);
+      border-radius: 16px;
+    }
+
+    #nft-img {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: 1s ease;
+      backface-visibility: hidden;
+      border-radius: 15px;
+    }
+
+    #nft-hover {
+      transition: 1s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .container-img:hover #nft-img {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    .container-img:hover #nft-hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .card-title span:hover {
+      color: aqua;
+      cursor: pointer;
+    }
+
+    .card-body {
+      padding: 0;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    #profile-img {
+      width: 35px;
+      height: 35px;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .card-title {
+      margin-bottom: 15px;
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    .card-text {
+      font-weight: 300;
+    }
+
+    #nft-price {
+      color: aqua;
+    }
+
+    .text-style {
+      color: hsl(215, 51%, 70%);
+      font-size: 18px;
+    }
+
+    .text-style span {
+      color: white;
+    }
+
+    .text-style span:hover {
+      color: aqua;
+      cursor: pointer;
+    }
+
+    .marginspan {
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+
+    hr {
+      margin: 20px auto;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="center-card">
+      <div class="card" style="width: 24rem;">
+        <div class="container-img">
+          <img id="nft-img" src="/begginer projects/NFT-preview-card-component/images/image-equilibrium.jpg"
+            class="card-img-top" alt="NFT Image">
+          <div id="nft-hover"><img src="/begginer projects/NFT-preview-card-component/images/icon-view.svg" alt="">
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><span>Equilibrium #3429</span> </h5>
+          <p class="card-text text-style">Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="d-flex justify-content-between">
+            <div id="nft-price" class="d inline"><img class="marginspan"
+                src="/begginer projects/NFT-preview-card-component/images/icon-ethereum.svg" alt="Ethereum Icon">0.041
+              ETH</div>
+            <div class="d inline text-style"><img class="marginspan"
+                src="/begginer projects/NFT-preview-card-component/images/icon-clock.svg" alt="Ethereum Icon">3 days
+              left</div>
+          </div>
+          <hr>
+          <div class="d inline text-style"><img id="profile-img"
+              src="/begginer projects/NFT-preview-card-component/images/image-avatar.png" alt="Ethereum Icon">Creation
+            of <span>Jules Wyvern</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
