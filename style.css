@@ -1,16 +1,19 @@
 
     body {
       background-color: hsl(217, 54%, 11%);
-    }
-
-    .center-card {
-      font-family: 'Outfit', serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: grid;
+      place-items: center;
       height: 100vh;
     }
+    
+    main{
+      font-family: 'Outfit', serif;
+    }
 
+    a{
+      color: white;
+      text-decoration: none;  
+    }
     .card {
       background-color: hsl(216, 50%, 16%);
       color: white;
@@ -55,9 +58,13 @@
       cursor: pointer;
     }
 
-    .card-title span:hover {
+    .card-title a:hover {
       color: aqua;
       cursor: pointer;
+    }
+
+    .card-title a:active {
+      color: rgb(219, 26, 97);
     }
 
     .card-body {
@@ -92,16 +99,17 @@
       color: hsl(215, 51%, 70%);
       font-size: 18px;
     }
+    /*link */
 
-    .text-style span {
-      color: white;
-    }
-
-    .text-style span:hover {
+    .text-style a:hover {
       color: aqua;
       cursor: pointer;
     }
 
+    .text-style a:active {
+      color: rgb(219, 26, 97);
+    }
+    
     .marginspan {
       margin-right: 8px;
       margin-bottom: 2px;
